@@ -33,3 +33,10 @@ describe('App component', () => {
 
   });
 });
+
+ // src/App.test.js
+    
+    it('matches the snapshot', () => {
+  const tree = renderer.create(<App />).toJSON();
+  expect(tree).toMatchSnapshot();
+});
