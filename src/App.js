@@ -1,6 +1,7 @@
  // src/App.js
     
  import React, { Component } from 'react';
+ import renderer from 'react-test-renderer';
     
  class App extends Component {
    constructor() {
@@ -23,8 +24,8 @@
      return (
        <div>
          <p>Count: {this.state.count}</p>
-         <button className="increment" onClick={this.increment}>Increment count</button>
-         <button className="decrement" onClick={this.decrement}>Decrement count</button>
+         <button className="increment" onClick={this.increment}>Increment</button>
+         <button className="decrement" onClick={this.decrement}>Decrement</button>
        </div>
      )
    }
